@@ -1,0 +1,115 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 600px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 5px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+label {
+	font-size: 1rem;
+	color: #555;
+}
+
+input[type="text"] ,input[type="number"]{
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input:focus {
+	border-color: #007bff;
+	outline: none;
+}
+
+button {
+	margin: 10px 0;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+
+.webcam-container {
+    width: 100%;            /* Pleine largeur de la page */
+    max-width: 800px;       /* Limite la taille maximale */
+    margin: 0 auto;         /* Centre la webcam horizontalement */
+    height: 500px;          /* Hauteur personnalisée */
+    overflow: hidden;       /* Cache les éventuels débordements */
+    border-radius: 10px;    /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  }
+  
+  .webcam-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Remplit le conteneur */
+  }
+  
+
+.error {
+	width: 300px;
+    padding: 8px;
+    border: 1px solid red;
+    background: pink;
+    text-align: center;
+    border-radius: 2px;
+	margin-bottom: 4px;
+    color: red;
+	font-size: 10px;
+}
+
+.loading {
+	color: #007bff;
+	font-style: italic;
+}
+
+.success-message {
+	/* background-color: #92ca9f; Vert */
+	width: 300px;
+    padding: 4px;
+    border: 1px solid green;
+    background: #70c6c6;
+    text-align: center;
+    border-radius: 2px;
+    color: green;
+	font-size: smaller;
+	margin: 0px 0px 4px 0px;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
